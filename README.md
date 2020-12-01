@@ -1,5 +1,11 @@
-# Project
+# SVG chart
+
+Test assignment - creating a svg chart with animations. 
 
 ## Technologies
+- HTML5, CSS3
+- Sass (SCSS)
+- Gulp
+- desktop-first responsive design
 
-### Info
+The design is provided by Happy Jobs.
