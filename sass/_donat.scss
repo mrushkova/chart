@@ -1,0 +1,104 @@
+.svg-item {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  animation: donutfade 3s;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    background-color: $color-grey-light;
+    mask-image: url(../img/loyalty.svg);
+    mask-size: cover;
+    background-image: none;
+    animation: donutfade 3s;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 70%;
+    right: 57%;
+    transform: translate(50%, 50%);
+    background-color: $color-green;
+    mask-image: url(../img/triangular-filled-up-arrow.svg);
+    mask-size: cover;
+    background-image: none;
+    animation: donutfade 3s;
+  }
+}
+.donut {
+  &__ring {
+    stroke: $color-grey-light;
+    animation: donut3 3s;
+  }
+
+  &__segment {
+    &--1 {
+      stroke: $color-yellow;
+      animation: donut1 3s;
+    }
+
+    &--2 {
+      stroke: $color-green;
+      animation: donut2 3s;
+    }
+  }
+
+  &__text {
+    fill: $color-black;
+    animation: donutfadelong 3s;
+    text-align: center;
+    text-anchor: middle;
+  }
+
+  &__percent {
+    &--integer {
+      font-size: 0.3em;
+      font-weight: 500;
+    }
+
+    &--decile {
+      font-family: 'Gotham Pro Light', 'Arial', sans-serif;
+      font-size: 0.16em;
+      font-weight: 300;
+    }
+
+    &--per {
+      fill: $color-grey;
+      font-size: 0.13em;
+    }
+  }
+
+  &__data {
+    font-family: 'Gotham Pro Medium', 'Arial', sans-serif;
+    font-size: 0.15em;
+    font-weight: 500;
+    line-height: 1;
+
+    &--level {
+      fill: $color-yellow;
+      font-size: 0.9em;
+    }
+  }
+
+  &__info {
+    fill: $color-grey;
+    font-size: 0.1em;
+  }
+
+  &__rate {
+    font-family: 'Gotham Pro Light', 'Arial', sans-serif;
+    fill: $color-green;
+    font-size: 0.14em;
+    font-weight: 300;
+  }
+}

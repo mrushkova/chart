@@ -1,0 +1,11 @@
+.arrow {
+  position: absolute;
+  top: 30%;
+  left: -1rem;
+  height: 30rem;
+  animation: donutfadelong 4s;
+
+  &__img {
+    height: 100%;
+  }
+}
