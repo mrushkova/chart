@@ -5,6 +5,10 @@
   height: 30rem;
   animation: donutfadelong 4s;
 
+  @include respond(desktop) {
+    height: 25rem;
+  }
+
   &__img {
     height: 100%;
   }
